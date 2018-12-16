@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8' />
+    <title>郭勇飞</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style type="text/css">
+        #main {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* plz write css code here */
+        #tip {
+            max-width: 400px;
+            position: absolute;
+            display: none;
+            z-index: 100;
+            background: rgba(255, 255, 255, 1);
+            border: 1px solid #F1F2F3;
+            border-radius: 2px;
+            padding: 2px 4px;
+            box-shadow: 1px 1px 8px 1px #4b4b4b;
+        }
+
+        #treemap {
+            border: 2px solid black;
+            border-radius: 4px;
+            padding: 2px;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 4px;
+            padding: 2px;
+        }
+
+        .row {
+            min-width: 1440px;
+            margin: 16px;
+            border-radius: 16px;
+            box-shadow: 0 4px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)
+        }
+
+        pre {
+            width: 100%;
+            max-height: 720px;
+            overflow: scroll;
+            background: #22263b;
+            color: white;
+        }
+
+        .legend {
+            font-family: Consolas;
+            font-size: 16px;
+            border-radius: 16px;
+            background: #CCC;
+            padding: 4px 12px;
+            color: white;
+        }
+
+        .inst {
+            display: block;
+            clear: both;
+        }
+
+        .inst-icon {
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+        }
+
+        .inst span {
+            vertical-align: baseline;
+            display: inline-block;
+            color: white;
+        }
+
+        #copyBtn {
+            background: #ebebeb;
+            font-size: 16px;
+            padding: 4px 16px;
+            border-radius: 24px;
+        }
+
+        #copyBtn:hover {
+            background: #CCC;
+            cursor: pointer;
+        }
+
+        .banner {
+            border-radius: 0px;
+            height: 144px;
+            color: white;
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            top: -16px;
+            background-color: cornflowerblue;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2), 0 2px 16px 0 rgba(0, 0, 0, .19);
+        }
+
+        .modal {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- plz insert your doms under the main div element -->
+    <div id="main" style="position: relative;">
+        <!--        <div class="scrim" style="background-color: black; height: 100%;width: 100%;position: absolute; z-index: 1000"></div>-->
+        <div class="row py-3 m-0 banner">
+            <div class="col-12">
+                <h2 class="mx-3 mb-3">Squarified Tree Map By Giz</h2>
+            </div>
+        </div>
+        <div class="row py-3" style="z-index: 100; position: relative; background: white; top: 64px">
+            <div class="col-12 mx-3 mb-3 mt-1" id="legendContainer">
+            </div>
+            <div class="col-8 mx-auto text-center">
+                <canvas id="treemap" width="900" height="720">
+                    <!-- 替换内容 -->
+                    <p>An Tree Map</p>
+                </canvas>
+            </div>
+            <div class="col-4 mx-auto">
+                <pre contenteditable="true"></pre>
+            </div>
+        </div>
+        <div id="tip">
+            <p><strong id="label"></strong></p>
+            <p id="value">Value:&nbsp;<span></span></p>
+        </div>
+        <div class="row p-3" style="top: 64px; position: relative;">
+            <div class="col-12 mb-3">
+                <p style="font-size: 20px">简短的测试例子<label id="copyBtn" class="float-right" onclick="copy()">复制</label></p>
+            </div>
+            <div class="col-12">
+                <pre id="shortEg" style="height: 240px">
+
+                </pre>
+            </div>
+        </div>
+        <div class="modal fade" id="interactiveTip" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="background: hsla(0,0%,50%,.9)">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-white">交互说明</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="inst">
+                                <div class="inst-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+                                        <path fill="#FFF" d="M35 23.9l6.9-6.9-6.5-6.4h-5.2l-5.5 5.5 3.7 3.6 1.2-1.2zm-.5 6.6l-1.9-1.9-6.9 6.9 14.8 14.8 4.2.1 13.2-13.2-.1-4.2L43 18.2l-6.9 6.9L38 27z" opacity=".6" />
+                                        <path fill="#FFF" d="M27.2 20.9l-3.6-3.7-5.5 5.5v5.2l6.5 6.5 6.8-6.9-5.4-5.4z" />
+                                        <path fill="#FFF" d="M27.567 22.124l2.05-2.05 6.79 6.788-2.052 2.05z" opacity=".6" />
+                                        <path fill="#FFF" d="M10.449 16.466l.723-.957 5.346 4.039-.723.957zm-2.251 6.247l.251-1.174L15 22.942l-.25 1.173zm-.045 5.027l6.644-.866.155 1.19-6.644.866zm1.345 5.639l6.228-2.469.442 1.116-6.228 2.469z" />
+                                    </svg>
+                                </div>
+                                <span>鼠标左键: 进入子矩形区域</span>
+                            </div>
+                            <div class="inst">
+                                <div class="inst-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+                                        <g fill="#FFF">
+                                            <path opacity=".6" d="M25.4 31.9l-6.8 6.9-6.5-6.4v-5.3l5.5-5.4 3.6 3.6-1.2 1.2zm6.7-.4l-2-2 6.9-6.9 14.8 14.9.1 4.2-13.2 13.2-4.2-.1L19.7 40l6.9-6.9 1.9 1.9z" />
+                                            <path d="M22.4 24.2l-3.7-3.7 5.5-5.4 5.2-.1 6.5 6.5-6.9 6.9-5.4-5.4z" />
+                                            <path opacity=".6" d="M30.407 31.296l-2.05 2.05-6.788-6.788 2.05-2.05z" />
+                                            <path d="M16.967 8.157l.957-.724 4.039 5.346-.958.724zm6.048-2.746l1.173-.25 1.402 6.551-1.174.251zm5.317 6.414l.867-6.644 1.19.156-.867 6.643zm4.119.885l2.47-6.23 1.115.443-2.47 6.228z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>鼠标右键: 返回父矩形区域</span>
+                            </div>
+                            <div class="inst ml-4"><span>&#9679;&nbsp;&nbsp;&nbsp;&nbsp;在右侧输入区域内改变源数据，树图实时改变。（若数据有误，则不能正确显示）</span></div>
+                            <div class="inst ml-4"><span>&#9679;&nbsp;&nbsp;&nbsp;&nbsp;复制功能需在Chrome浏览器上运行时使用。否则格式可能有错。</span></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="dismissBtn">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

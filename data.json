@@ -1,0 +1,875 @@
+var srcData = [{
+    "label": "USA",
+    "value": "8695000",
+    "data": [{
+        "label": "Northern Region",
+        "value": "4140000",
+        "data": [{
+            "label": "Carol Francis",
+            "value": "84000",
+        }, {
+            "label": "Otis Newman",
+            "value": "60000",
+        }, {
+            "label": "Darlene Alvarez",
+            "value": "50000",
+        }, {
+            "label": "Lucas Cannon",
+            "value": "58000",
+        }, {
+            "label": "Rosalie Huff",
+            "value": "36000",
+        }, {
+            "label": "Jerome Vargas",
+            "value": "72000",
+        }, {
+            "label": "Becky Barton",
+            "value": "18000",
+        }, {
+            "label": "Ben Rios",
+            "value": "14000",
+        }, {
+            "label": "Donnie Patton",
+            "value": "37000",
+        }, {
+            "label": "Dana Freeman",
+            "value": "41000",
+        }, {
+            "label": "Darren Barrett",
+            "value": "54000",
+        }, {
+            "label": "Steve Vaughn",
+            "value": "35000",
+        }, {
+            "label": "Roosevelt Rhodes",
+            "value": "48000",
+        }, {
+            "label": "Moses Sparks",
+            "value": "38000",
+        }, {
+            "label": "Hope Cox",
+            "value": "32000",
+        }, {
+            "label": "Hector Lowe",
+            "value": "66000",
+        }, {
+            "label": "Lori Christensen",
+            "value": "47000",
+        }, {
+            "label": "Roman Aguilar",
+            "value": "14000",
+        }, {
+            "label": "Brittany Chandler",
+            "value": "21000",
+        }, {
+            "label": "Tiffaney Battle",
+            "value": "60000",
+        }, {
+            "label": "Elin Stamps",
+            "value": "54000",
+        }, {
+            "label": "Donnetta Coley",
+            "value": "59000",
+        }, {
+            "label": "Emmaline Halcomb",
+            "value": "34000",
+        }, {
+            "label": "Natosha Hammett",
+            "value": "39000",
+        }, {
+            "label": "Kimi Stegall",
+            "value": "15000",
+        }, {
+            "label": "Norberto Kirk",
+            "value": "46000",
+        }, {
+            "label": "Noma Martindale",
+            "value": "52000",
+        }, {
+            "label": "Coreen Numbers",
+            "value": "30000",
+        }, {
+            "label": "Chas Irvin",
+            "value": "26000",
+        }, {
+            "label": "Carlo Tobin",
+            "value": "31000",
+        }, {
+            "label": "Ayanna Mclain",
+            "value": "29000",
+        }, {
+            "label": "Rolland Turney",
+            "value": "42000",
+        }, {
+            "label": "Ona Roden",
+            "value": "64000",
+        }, {
+            "label": "Drew Clarkson",
+            "value": "24000",
+        }, {
+            "label": "Samuel Adler",
+            "value": "29000",
+        }, {
+            "label": "Adrian Steen",
+            "value": "51000",
+        }, {
+            "label": "Xiao Batson",
+            "value": "35000",
+        }, {
+            "label": "Britney Hammonds",
+            "value": "45000",
+        }, {
+            "label": "Roslyn Wilhelm",
+            "value": "28000",
+        }, {
+            "label": "Alva Puente",
+            "value": "26000",
+        }, {
+            "label": "Daina Horvath",
+            "value": "49000",
+        }, {
+            "label": "Louie Chaney",
+            "value": "54000",
+        }, {
+            "label": "Olympia Mcmullen",
+            "value": "71000",
+        }, {
+            "label": "Nichol Leclair",
+            "value": "38000",
+        }, {
+            "label": "Marylou Messenger",
+            "value": "41000",
+        }, {
+            "label": "Christoper Crowley",
+            "value": "34000",
+        }, {
+            "label": "Neville Venable",
+            "value": "37000",
+        }, {
+            "label": "Brock Rowell",
+            "value": "35000",
+        }, {
+            "label": "Gisele Pelletier",
+            "value": "32000",
+        }, {
+            "label": "Thelma Caldwell",
+            "value": "35000",
+        }, {
+            "label": "Shyla Plunkett",
+            "value": "84000",
+        }, {
+            "label": "Joie Dickson",
+            "value": "60000",
+        }, {
+            "label": "Shana Nabors",
+            "value": "50000",
+        }, {
+            "label": "Catina Burris",
+            "value": "58000",
+        }, {
+            "label": "Man Spearman",
+            "value": "36000",
+        }, {
+            "label": "Shaunna Hamby",
+            "value": "72000",
+        }, {
+            "label": "Stormy Read",
+            "value": "18000",
+        }, {
+            "label": "Wen Coe",
+            "value": "14000",
+        }, {
+            "label": "Elizebeth Poston",
+            "value": "37000",
+        }, {
+            "label": "Breanna Stringer",
+            "value": "41000",
+        }, {
+            "label": "Allyn Holly",
+            "value": "54000",
+        }, {
+            "label": "Lera Gaylord",
+            "value": "35000",
+        }, {
+            "label": "Lashunda Dowd",
+            "value": "48000",
+        }, {
+            "label": "Kiesha Tyner",
+            "value": "38000",
+        }, {
+            "label": "Lamont Allman",
+            "value": "32000",
+        }, {
+            "label": "Sun Switzer",
+            "value": "66000",
+        }, {
+            "label": "Dorene Small",
+            "value": "47000",
+        }, {
+            "label": "Cherlyn Bozeman",
+            "value": "14000",
+        }, {
+            "label": "Stephani Contreras",
+            "value": "21000",
+        }, {
+            "label": "Bebe Holcomb",
+            "value": "60000",
+        }, {
+            "label": "Shenika Barham",
+            "value": "54000",
+        }, {
+            "label": "Troy Hobbs",
+            "value": "59000",
+        }, {
+            "label": "Thomas Tom",
+            "value": "34000",
+        }, {
+            "label": "Sunshine Libby",
+            "value": "39000",
+        }, {
+            "label": "Tambra Patten",
+            "value": "15000",
+        }, {
+            "label": "Marlyn Cato",
+            "value": "46000",
+        }, {
+            "label": "Jeanelle Ham",
+            "value": "52000",
+        }, {
+            "label": "Armanda Kimble",
+            "value": "30000",
+        }, {
+            "label": "Danna Fitzpatrick",
+            "value": "26000",
+        }, {
+            "label": "Elmira Nagle",
+            "value": "31000",
+        }, {
+            "label": "Bella Marx",
+            "value": "29000",
+        }, {
+            "label": "Vania Meeks",
+            "value": "42000",
+        }, {
+            "label": "Florencio Heffner",
+            "value": "64000",
+        }, {
+            "label": "Amie Peoples",
+            "value": "24000",
+        }, {
+            "label": "Chrystal Downs",
+            "value": "29000",
+        }, {
+            "label": "Glennis Chisholm",
+            "value": "51000",
+        }, {
+            "label": "Sydney Castaneda",
+            "value": "35000",
+        }, {
+            "label": "Gregory Drummond",
+            "value": "45000",
+        }, {
+            "label": "Birdie Neely",
+            "value": "28000",
+        }, {
+            "label": "Ciera Mcafee",
+            "value": "26000",
+        }, {
+            "label": "Martin Larose",
+            "value": "49000",
+        }, {
+            "label": "Bobette Dutton",
+            "value": "54000",
+        }, {
+            "label": "Numbers Yarbrough",
+            "value": "71000",
+        }, {
+            "label": "Sanjuanita Croteau",
+            "value": "38000",
+        }, {
+            "label": "Alysha Aguirre",
+            "value": "41000",
+        }, {
+            "label": "Beau Welker",
+            "value": "34000",
+        }, {
+            "label": "Yuri Brannon",
+            "value": "37000",
+        }, {
+            "label": "Breana Marion",
+            "value": "35000",
+        }, {
+            "label": "Bernardina Fennell",
+            "value": "32000",
+        }, {
+            "label": "Bridgette Gould",
+            "value": "35000",
+        }]
+    }, {
+        "label": "Eastern Region",
+        "value": "1110000",
+        "data": [{
+            "label": "Lee Miles",
+            "value": "18000",
+        }, {
+            "label": "Eduardo Day",
+            "value": "21000",
+        }, {
+            "label": "Darrell Schultz",
+            "value": "29500",
+        }, {
+            "label": "Troy Patrick",
+            "value": "25500",
+        }, {
+            "label": "Kerry Smith",
+            "value": "30000",
+        }, {
+            "label": "Franklin Walker",
+            "value": "18500",
+        }, {
+            "label": "Toby Brady",
+            "value": "28500",
+        }, {
+            "label": "Kenneth Wilkerson",
+            "value": "25000",
+        }, {
+            "label": "Ralph Goodman",
+            "value": "36000",
+        }, {
+            "label": "Lela Glover",
+            "value": "15500",
+        }, {
+            "label": "Warren Gordon",
+            "value": "25500",
+        }, {
+            "label": "Gladys Ruiz",
+            "value": "33000",
+        }, {
+            "label": "Mabel Norris",
+            "value": "14000",
+        }, {
+            "label": "Darrel Rodgers",
+            "value": "17500",
+        }, {
+            "label": "Barry Larson",
+            "value": "20000",
+        }, {
+            "label": "Alma Houston",
+            "value": "31000",
+        }, {
+            "label": "Rochelle Burke",
+            "value": "12500",
+        }, {
+            "label": "Orville Garza",
+            "value": "34500",
+        }, {
+            "label": "Rex Nichols",
+            "value": "14500",
+        }, {
+            "label": "Jenna Burton",
+            "value": "18500",
+        }, {
+            "label": "Jordan Little",
+            "value": "21000",
+        }, {
+            "label": "Rodolfo Dawson",
+            "value": "28500",
+        }, {
+            "label": "Darryl Bowen",
+            "value": "15500",
+        }, {
+            "label": "Marsha Foster",
+            "value": "12500",
+        }, {
+            "label": "Sandra Curtis",
+            "value": "32000",
+        }, {
+            "label": "Alexis Robinson",
+            "value": "19500",
+        }, {
+            "label": "Courtney Stokes",
+            "value": "27500",
+        }, {
+            "label": "Kelli Miller",
+            "value": "34500",
+        }, {
+            "label": "Cathy Davis",
+            "value": "14500",
+        }, {
+            "label": "Gaynell Mcafee",
+            "value": "14000",
+        }, {
+            "label": "Trinidad Iverson",
+            "value": "24500",
+        }, {
+            "label": "Anjelica Kilpatrick",
+            "value": "27000",
+        }, {
+            "label": "Cheryle Hearn",
+            "value": "17500",
+        }, {
+            "label": "Rosamond Gass",
+            "value": "21000",
+        }, {
+            "label": "Katharine Perrin",
+            "value": "12500",
+        }, {
+            "label": "Heide Matteson",
+            "value": "32000",
+        }, {
+            "label": "Amparo Fortin",
+            "value": "25500",
+        }, {
+            "label": "Charlena Bills",
+            "value": "19500",
+        }, {
+            "label": "Ronna Irizarry",
+            "value": "30000",
+        }, {
+            "label": "Fidelia Hummel",
+            "value": "28000",
+        }, {
+            "label": "Darlena Maher",
+            "value": "14500",
+        }, {
+            "label": "Isa Browning",
+            "value": "17000",
+        }, {
+            "label": "Dalene Baron",
+            "value": "22500",
+        }, {
+            "label": "Ghislaine Loy",
+            "value": "12000",
+        }, {
+            "label": "Alexander Eldridge",
+            "value": "18500",
+        }, {
+            "label": "Brett Clemmons",
+            "value": "13000",
+        }, {
+            "label": "Mellie Hackney",
+            "value": "13000",
+        }, {
+            "label": "Gerry Felder",
+            "value": "35500",
+        }, {
+            "label": "Librada Creighton",
+            "value": "17500",
+        }, {
+            "label": "Florence Pierce",
+            "value": "21000",
+        }]
+    }, {
+        "label": "Southern Region",
+        "value": "1555000",
+        "data": [{
+            "label": "Derek Sandoval",
+            "value": "12000",
+        }, {
+            "label": "Bertha Bishop",
+            "value": "55000",
+        }, {
+            "label": "Dominick Price",
+            "value": "24500",
+        }, {
+            "label": "Sylvia Rodriquez",
+            "value": "15000",
+        }, {
+            "label": "Leland Jennings",
+            "value": "63000",
+        }, {
+            "label": "Dean Collins",
+            "value": "56000",
+        }, {
+            "label": "Jamie Cohen",
+            "value": "19500",
+        }, {
+            "label": "Elias Hammond",
+            "value": "29500",
+        }, {
+            "label": "Kristy Stone",
+            "value": "24500",
+        }, {
+            "label": "Jeanette Wood",
+            "value": "17500",
+        }, {
+            "label": "Salvador Colon",
+            "value": "75000",
+        }, {
+            "label": "Victor Ferguson",
+            "value": "60000",
+        }, {
+            "label": "Marion Hernandez",
+            "value": "14500",
+        }, {
+            "label": "Javier Erickson",
+            "value": "18000",
+        }, {
+            "label": "Stephanie Matthews",
+            "value": "16500",
+        }, {
+            "label": "Deanna Russell",
+            "value": "25500",
+        }, {
+            "label": "Nettie Holt",
+            "value": "32500",
+        }, {
+            "label": "Lynne Mack",
+            "value": "50000",
+        }, {
+            "label": "Carrie Stevens",
+            "value": "47000",
+        }, {
+            "label": "Janyce Hildebrand",
+            "value": "29000",
+        }, {
+            "label": "Emery Underhill",
+            "value": "67000",
+        }, {
+            "label": "Priscila Coy",
+            "value": "72000",
+        }, {
+            "label": "Dede Moffett",
+            "value": "12500",
+        }, {
+            "label": "Sydney Merchant",
+            "value": "65500",
+        }, {
+            "label": "Daryl Farrar",
+            "value": "65000",
+        }, {
+            "label": "Nella Nickerson",
+            "value": "27000",
+        }, {
+            "label": "Octavia Mccorkle",
+            "value": "17500",
+        }, {
+            "label": "Lynsey Boren",
+            "value": "22500",
+        }, {
+            "label": "Argentina Ireland",
+            "value": "15500",
+        }, {
+            "label": "Tonda Ricks",
+            "value": "14500",
+        }, {
+            "label": "Shira Laporte",
+            "value": "25500",
+        }, {
+            "label": "Reuben Upshaw",
+            "value": "12000",
+        }, {
+            "label": "Angelia Mcalister",
+            "value": "23500",
+        }, {
+            "label": "Ludivina Teel",
+            "value": "19000",
+        }, {
+            "label": "Darcel Scarbrough",
+            "value": "13000",
+        }, {
+            "label": "Chantelle Carl",
+            "value": "14000",
+        }, {
+            "label": "Young Chestnut",
+            "value": "14500",
+        }, {
+            "label": "Janetta Gilman",
+            "value": "17000",
+        }, {
+            "label": "Otto Pfeifer",
+            "value": "29500",
+        }, {
+            "label": "Queen Trudeau",
+            "value": "70000",
+        }, {
+            "label": "Candie Vang",
+            "value": "17000",
+        }, {
+            "label": "Tia Burgos",
+            "value": "21000",
+        }, {
+            "label": "Teresita Sprague",
+            "value": "46500",
+        }, {
+            "label": "Tomoko Shull",
+            "value": "17000",
+        }, {
+            "label": "Yahaira Snider",
+            "value": "24500",
+        }, {
+            "label": "Zina Espinoza",
+            "value": "51000",
+        }, {
+            "label": "Jamal Crespo",
+            "value": "12000",
+        }, {
+            "label": "Ariel Jorgensen",
+            "value": "16000",
+        }, {
+            "label": "Fredda Tuttle",
+            "value": "14000",
+        }, {
+            "label": "Gerardo Carter",
+            "value": "34500",
+        }]
+    }, {
+        "label": "Western Region",
+        "value": "1890000",
+        "data": [{
+            "label": "Other",
+            "value": "30000",
+            "data": [{
+                "label": "Other2",
+                "value": "15000",
+            }, {
+                "label": "Other3",
+                "value": "15000",
+            }]
+        }, {
+            "label": "Otherrrr",
+            "value": "30000",
+            "data": [{
+                "label": "Other4",
+                "value": "15000",
+            }, {
+                "label": "Other5",
+                "value": "15000",
+            }]
+        }, {
+            "label": "Sadie Wells",
+            "value": "30000",
+        }, {
+            "label": "Jacqueline Griffith",
+            "value": "45000",
+        }, {
+            "label": "Malcolm Lee",
+            "value": "55000",
+        }, {
+            "label": "Martin Hudson",
+            "value": "59000",
+        }, {
+            "label": "Carlos Hart",
+            "value": "64000",
+        }, {
+            "label": "Alison Luna",
+            "value": "35000",
+        }, {
+            "label": "Pablo Paul",
+            "value": "72000",
+        }, {
+            "label": "Arlene Fox",
+            "value": "33000",
+        }, {
+            "label": "Lillian Young",
+            "value": "39000",
+        }, {
+            "label": "Annie Ford",
+            "value": "66000",
+        }, {
+            "label": "Manuel Delgado",
+            "value": "46000",
+        }, {
+            "label": "Arthur Pope",
+            "value": "28000",
+        }, {
+            "label": "Antonia Marshall",
+            "value": "24000",
+        }, {
+            "label": "Glen Alexander",
+            "value": "29000",
+        }, {
+            "label": "Myrtle Bass",
+            "value": "40000",
+        }, {
+            "label": "Garry Palmer",
+            "value": "27000",
+        }, {
+            "label": "Dianne Blair",
+            "value": "35000",
+        }, {
+            "label": "Melba Page",
+            "value": "36000",
+        }, {
+            "label": "Darla Nelson",
+            "value": "60000",
+        }, {
+            "label": "Winston Brewer",
+            "value": "43000",
+        }, {
+            "label": "Drew Osborne",
+            "value": "21000",
+        }, {
+            "label": "Jesus Sullivan",
+            "value": "46000",
+        }, {
+            "label": "Jeremiah Flowers",
+            "value": "15000",
+        }, {
+            "label": "Suzanne Richardson",
+            "value": "24000",
+        }, {
+            "label": "Nicholas Mathis",
+            "value": "71000",
+        }, {
+            "label": "Della King",
+            "value": "28000",
+        }, {
+            "label": "Beth Boone",
+            "value": "40000",
+        }, {
+            "label": "Ruben Powell",
+            "value": "35000",
+        }, {
+            "label": "Marlon Harrington",
+            "value": "14000",
+        }, {
+            "label": "Sharice Kang",
+            "value": "25000",
+        }, {
+            "label": "Lizette Stout",
+            "value": "55000",
+        }, {
+            "label": "Jimmy Cho",
+            "value": "41000",
+        }, {
+            "label": "Weston Alcorn",
+            "value": "21000",
+        }, {
+            "label": "Omer Whitfield",
+            "value": "18000",
+        }, {
+            "label": "Delora Downs",
+            "value": "35000",
+        }, {
+            "label": "Rea Booker",
+            "value": "22000",
+        }, {
+            "label": "Jon Blue",
+            "value": "73000",
+        }, {
+            "label": "Haley Cameron",
+            "value": "17000",
+        }, {
+            "label": "Jani Fortune",
+            "value": "23000",
+        }, {
+            "label": "Theressa Talbot",
+            "value": "26000",
+        }, {
+            "label": "Tashia Crane",
+            "value": "38000",
+        }, {
+            "label": "Latonya Grey",
+            "value": "19000",
+        }, {
+            "label": "Lyndsey Song",
+            "value": "40000",
+        }, {
+            "label": "Lan Bean",
+            "value": "48000",
+        }, {
+            "label": "Ethelene Haas",
+            "value": "52000",
+        }, {
+            "label": "Lauran Dunaway",
+            "value": "29000",
+        }, {
+            "label": "Williams Hodge",
+            "value": "14000",
+        }, {
+            "label": "Elwanda Archuleta",
+            "value": "24000",
+        }, {
+            "label": "Florida Andersen",
+            "value": "30000",
+        }, {
+            "label": "Scott Perry",
+            "value": "20000",
+        }]
+    }, ]
+}];
+
+var exampleData = [
+    {
+        "label": "食品销售",
+        "value": 496,
+        "data": [
+            {
+                "label": "早餐",
+                "value": 100,
+                "data": [
+                    {
+                        "label": "咖啡",
+                        "value": 20
+                    },{
+                        "label": "茶",
+                        "value": 9
+                    },
+                    {
+                        "label": "华夫饼",
+                        "value": 12
+                    },
+                    {
+                        "label": "煎饼",
+                        "value": 35
+                    },
+                    {
+                        "label": "鸡蛋",
+                        "value": 24
+                    }
+                ]
+            },
+            {
+                "label": "午餐",
+                "value": 247,
+                "data": [
+                    {
+                        "label": "咖啡",
+                        "value": 10
+                    }, {
+                        "label": "冰茶",
+                        "value": 45
+                    },{
+                        "label": "汤",
+                        "value": 16
+                    },{
+                        "label": "三明治",
+                        "value": 36
+                    },{
+                        "label": "沙拉",
+                        "value": 70
+                    },{
+                        "label": "派",
+                        "value": 45
+                    },{
+                        "label": "饼干",
+                        "value": 25
+                    }
+                ]
+            },
+            {
+                "label": "晚餐",
+                "value": 149,
+                "data": [
+                    {
+                        "label": "咖啡",
+                        "value": 24
+                    }, {
+                        "label": "泡芙",
+                        "value": 64
+                    }, {
+                        "label": "奶茶",
+                        "value": 16
+                    },{
+                        "label": "汉堡包",
+                        "value": 45
+                    }
+                ]
+            }
+        ]
+    },{
+        "label": "测试",
+        "value": 496
+    }
+];
